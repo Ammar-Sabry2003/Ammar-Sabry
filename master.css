@@ -1,0 +1,198 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body{
+    background-color: #F7F7F7;
+
+}
+
+.container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 95% !important;
+}
+
+nav .container-fluid .navbar-brand {
+    font-weight: bolder;
+}
+nav .container-fluid .navbar-brand span {
+    color: #0077b6;
+    /* font-weight: bolder; */
+}
+
+section .content {
+    height: auto;
+    background-color: gainsboro !important;
+    border-radius: 20px;
+    margin-bottom: 130px;
+    color: #0077b6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: large;
+}
+
+section .content .container {
+    display: flex;
+}
+
+section .content .right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+section .content .right img{
+    width: 250px;
+    height: 250px;
+    outline: #F7F7F7;
+    border-radius: 180px;
+
+}
+
+section .content .left {
+    width: 50%;
+}
+
+@media(max-width:1020px){
+    section .content .right,
+    section .content .left {
+        width: 100%;
+    }
+
+    section .content .right img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .projects .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .projects .container .job {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    section .skills .contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 0px; */
+
+    }
+
+
+
+    section .skills .contain .right,
+    section .skills .contain .left {
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    section .skills .contain .left {
+        order: 1;
+    }
+
+    section .skills .contain .right{
+        order: 2;
+    }
+
+
+}
+
+@media(max-width:830px){
+    section .content .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:993px){
+    .projects .container  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section .skills{
+    margin-bottom: 100px;
+}
+
+section .skills .contain {
+    display: flex;
+    gap: 80px;
+
+}
+
+section .skills .contain .right,
+section .skills .contain .left {
+    width: 50%;
+}
+
+section .skills .contain .left {
+    color: #0077b6;
+    font-size: larger;
+}
+
+section .skills .progress {
+    margin-bottom: 20px !important;
+}
+
+
+
+.projects {
+    margin-bottom: 50px;
+    color: #0077b6;
+}
+
+.projects .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: 30px;
+} 
+
+.projects .container .job {
+    width: 270px !important;
+    height: 350px;
+    /* border: 2px solid; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    background-color: gainsboro;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+} 
+
+.projects .container .job .top {
+    height: 40%;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.projects .container .job .bottom {
+    height: 60%;
+    padding: 10px;
+}
+
+.projects .container .job .top img{
+width: 100%;
+height: 100%;
+background-color: white;
+padding: 0px;
+}
+
